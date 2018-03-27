@@ -36,8 +36,6 @@ void vendor_load_properties()
     std::string model;
     std::string device;
     std::string name;
-    std::string description;
-    std::string fingerprint;
 
     model = "SM-" + bl_model;
 
@@ -56,21 +54,15 @@ void vendor_load_properties()
 
     name = device + "dd";
 
-    description = name + "-user 7.0 NRD90M " + bl_model + bl_build + " release-keys";
-    fingerprint = "samsung/" + name + "/" + device + ":7.0/NRD90M/" + bl_model + bl_build + ":user/release-keys";
 
     LOG(INFO) << "Found bootloader: %s", bootloader.c_str();
     LOG(INFO) << "Setting ro.product.model: %s", model.c_str();
     LOG(INFO) << "Setting ro.product.device: %s", device.c_str();
     LOG(INFO) << "Setting ro.product.name: %s", name.c_str();
     LOG(INFO) << "Setting ro.build.product: %s", device.c_str();
-    LOG(INFO) << "Setting ro.build.description: %s", description.c_str();
-    LOG(INFO) << "Setting ro.build.fingerprint: %s", fingerprint.c_str();
-
+    
     property_override("ro.product.model", model.c_str());
     property_override("ro.product.device", device.c_str());
     property_override("ro.product.name", name.c_str());
     property_override("ro.build.product", device.c_str());
-    property_override("ro.build.description", description.c_str());
-    property_override("ro.build.fingerprint", fingerprint.c_str());
 }
