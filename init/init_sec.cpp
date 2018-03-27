@@ -48,8 +48,8 @@ void vendor_load_properties()
     }
 
     if (device.size() == 0) {
-        LOG(ERROR) << "Could not detect device, forcing on7xeltedd";
-        device = "on7xelte";
+        LOG(ERROR) << "Could not detect device, forcing j5y17ltexx";
+        device = "j5y17lte";
     }
 
     name = device + "dd";
