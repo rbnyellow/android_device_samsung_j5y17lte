@@ -14,18 +14,20 @@
 # limitations under the License.
 #
 
-# Inherit device configuration
-$(call inherit-product, device/samsung/j5y17lte/device.mk)
+ifeq ($(TARGET_INIT_VENDOR_LIB),libinit_sec)
 
-# Inherit from those products. Most specific first
-$(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
+LOCAL_PATH := $(call my-dir)
+LIBINIT_SEC_PATH := $(call my-dir)
 
-# Inherit some common LineageOS stuff
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+include $(CLEAR_VARS)
+LOCAL_MODULE_TAGS := optional
+LOCAL_C_INCLUDES := \
+    system/core/base/include \
+    system/core/init
+LOCAL_CFLAGS := -Wall -DANDROID_TARGET=\"$(TARGET_BOARD_PLATFORM)\"
+LOCAL_SRC_FILES := init_sec.cpp
+LOCAL_WHOLE_STATIC_LIBRARY := libbase
+LOCAL_MODULE := libinit_sec
+include $(BUILD_STATIC_LIBRARY)
 
-# Device identifier
-PRODUCT_NAME := lineage_j5y17lte
-PRODUCT_DEVICE := j5y17lte
-PRODUCT_BRAND := samsung
-PRODUCT_MANUFACTURER := samsung
-PRODUCT_GMS_CLIENTID_BASE := android-samsung
+endif
