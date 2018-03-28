@@ -15,4 +15,5 @@
 #
 
 # Kernel
-TARGET_KERNEL_CONFIG := lineage-j5y17lte_defconfig
+TARGET_KERNEL_CONFIG := lineage_j5y17lte_defconfig
+TARGET_KERNEL_SOURCE := kernel/samsung/exynos7870
