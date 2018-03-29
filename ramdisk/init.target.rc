@@ -83,6 +83,87 @@ on boot
     chown system radio /sys/class/sensors/light_sensor/vendor
     chown system radio /sys/class/sensors/light_sensor/name
 
+# Permissions for Magnetic IIO
+    chown system radio	/sys/bus/iio/devices/iio:device2/buffer
+    chown system radio	/sys/bus/iio/devices/iio:device2/buffer/enable
+    chown system radio	/sys/bus/iio/devices/iio:device2/buffer/length
+    chown system radio	/sys/bus/iio/devices/iio:device2/dev
+    chown system radio	/sys/bus/iio/devices/iio:device2/hard_offset
+    chown system radio	/sys/bus/iio/devices/iio:device2/in_magn_scale
+    chown system radio	/sys/bus/iio/devices/iio:device2/in_magn_x_raw
+    chown system radio	/sys/bus/iio/devices/iio:device2/in_magn_y_raw
+    chown system radio	/sys/bus/iio/devices/iio:device2/in_magn_z_raw
+    chown system radio	/sys/bus/iio/devices/iio:device2/mag_average_sample
+    chown system radio	/sys/bus/iio/devices/iio:device2/name
+    chown system radio	/sys/bus/iio/devices/iio:device2/ouflow_thresh
+    chown system radio	/sys/bus/iio/devices/iio:device2/position
+    chown system radio	/sys/bus/iio/devices/iio:device2/power
+    chown system radio	/sys/bus/iio/devices/iio:device2/power/autosuspend_delay_ms
+    chown system radio	/sys/bus/iio/devices/iio:device2/power/control
+    chown system radio	/sys/bus/iio/devices/iio:device2/power/runtime_active_time
+    chown system radio	/sys/bus/iio/devices/iio:device2/power/runtime_status
+    chown system radio	/sys/bus/iio/devices/iio:device2/power/runtime_suspended_time
+    chown system radio	/sys/bus/iio/devices/iio:device2/sampling_frequency
+    chown system radio	/sys/bus/iio/devices/iio:device2/scan_elements
+    chown system radio	/sys/bus/iio/devices/iio:device2/scan_elements/in_magn_x_en
+    chown system radio	/sys/bus/iio/devices/iio:device2/scan_elements/in_magn_x_index
+    chown system radio	/sys/bus/iio/devices/iio:device2/scan_elements/in_magn_x_type
+    chown system radio	/sys/bus/iio/devices/iio:device2/scan_elements/in_magn_y_en
+    chown system radio	/sys/bus/iio/devices/iio:device2/scan_elements/in_magn_y_index
+    chown system radio	/sys/bus/iio/devices/iio:device2/scan_elements/in_magn_y_type
+    chown system radio	/sys/bus/iio/devices/iio:device2/scan_elements/in_magn_z_en
+    chown system radio	/sys/bus/iio/devices/iio:device2/scan_elements/in_magn_z_index
+    chown system radio	/sys/bus/iio/devices/iio:device2/scan_elements/in_magn_z_type
+    chown system radio	/sys/bus/iio/devices/iio:device2/scan_elements/in_timestamp_en
+    chown system radio	/sys/bus/iio/devices/iio:device2/scan_elements/in_timestamp_index
+    chown system radio	/sys/bus/iio/devices/iio:device2/scan_elements/in_timestamp_type
+    chown system radio	/sys/bus/iio/devices/iio:device2/self_test
+    chown system radio	/sys/bus/iio/devices/iio:device2/self_test_noise
+    chown system radio	/sys/bus/iio/devices/iio:device2/static_matrix
+    chown system radio	/sys/bus/iio/devices/iio:device2/trigger
+    chown system radio	/sys/bus/iio/devices/iio:device2/trigger/current_trigger
+    chown system radio	/sys/class/sensors/sensor_dev/flush
+
+    chmod 760	/sys/bus/iio/devices/iio:device2/buffer
+    chmod 760	/sys/bus/iio/devices/iio:device2/buffer/enable
+    chmod 760	/sys/bus/iio/devices/iio:device2/buffer/length
+    chmod 760	/sys/bus/iio/devices/iio:device2/dev
+    chmod 760	/sys/bus/iio/devices/iio:device2/hard_offset
+    chmod 760	/sys/bus/iio/devices/iio:device2/in_magn_scale
+    chmod 760	/sys/bus/iio/devices/iio:device2/in_magn_x_raw
+    chmod 760	/sys/bus/iio/devices/iio:device2/in_magn_y_raw
+    chmod 760	/sys/bus/iio/devices/iio:device2/in_magn_z_raw
+    chmod 760	/sys/bus/iio/devices/iio:device2/mag_average_sample
+    chmod 760	/sys/bus/iio/devices/iio:device2/name
+    chmod 760	/sys/bus/iio/devices/iio:device2/ouflow_thresh
+    chmod 760	/sys/bus/iio/devices/iio:device2/position
+    chmod 760	/sys/bus/iio/devices/iio:device2/power/
+    chmod 760	/sys/bus/iio/devices/iio:device2/power/autosuspend_delay_ms
+    chmod 760	/sys/bus/iio/devices/iio:device2/power/control
+    chmod 760	/sys/bus/iio/devices/iio:device2/power/runtime_active_time
+    chmod 760	/sys/bus/iio/devices/iio:device2/power/runtime_status
+    chmod 760	/sys/bus/iio/devices/iio:device2/power/runtime_suspended_time
+    chmod 760	/sys/bus/iio/devices/iio:device2/sampling_frequency
+    chmod 760	/sys/bus/iio/devices/iio:device2/scan_elements
+    chmod 760	/sys/bus/iio/devices/iio:device2/scan_elements/in_magn_x_en
+    chmod 760	/sys/bus/iio/devices/iio:device2/scan_elements/in_magn_x_index
+    chmod 760	/sys/bus/iio/devices/iio:device2/scan_elements/in_magn_x_type
+    chmod 760	/sys/bus/iio/devices/iio:device2/scan_elements/in_magn_y_en
+    chmod 760	/sys/bus/iio/devices/iio:device2/scan_elements/in_magn_y_index
+    chmod 760	/sys/bus/iio/devices/iio:device2/scan_elements/in_magn_y_type
+    chmod 760	/sys/bus/iio/devices/iio:device2/scan_elements/in_magn_z_en
+    chmod 760	/sys/bus/iio/devices/iio:device2/scan_elements/in_magn_z_index
+    chmod 760	/sys/bus/iio/devices/iio:device2/scan_elements/in_magn_z_type
+    chmod 760	/sys/bus/iio/devices/iio:device2/scan_elements/in_timestamp_en
+    chmod 760	/sys/bus/iio/devices/iio:device2/scan_elements/in_timestamp_index
+    chmod 760	/sys/bus/iio/devices/iio:device2/scan_elements/in_timestamp_type
+    chmod 760	/sys/bus/iio/devices/iio:device2/self_test
+    chmod 760	/sys/bus/iio/devices/iio:device2/self_test_noise
+    chmod 760	/sys/bus/iio/devices/iio:device2/static_matrix
+    chmod 760	/sys/bus/iio/devices/iio:device2/trigger
+    chmod 760	/sys/bus/iio/devices/iio:device2/trigger/current_trigger
+    chmod 760	/sys/class/sensors/sensor_dev/flush
+
 # Sensors permissions
 # Accelerometer_sensor
     chown system radio /sys/class/sensors/accelerometer_sensor/raw_data
