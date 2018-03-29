@@ -43,7 +43,11 @@ on boot
 
 # Permissions for LCD
     chown system radio /sys/class/lcd/panel/lcd_type
+    chown system system /sys/class/lcd/panel/temperature
     chown system system /sys/class/lcd/panel/lux
+    chown system media_rw /sys/class/lcd/panel/adaptive_control
+    chown system system /sys/class/lcd/panel/dpui
+    chown system system /sys/class/lcd/panel/dpui_dbg
 
 # Sensors permissions
 # Accelerometer_sensor
