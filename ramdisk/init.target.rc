@@ -163,3 +163,11 @@ service sswap /sbin/sswap -s -f 1536
     user root
     group root
     oneshot
+
+# Permissions for System LSI NFC
+# NFC : Permissions for NFC
+    chmod 0660 /dev/sec-nfc
+    chown nfc nfc /dev/sec-nfc
+
+# NFC : EFS section for NFC Resonant Frequency
+    mkdir /efs/sec_efs/nfc 0700 nfc nfc
