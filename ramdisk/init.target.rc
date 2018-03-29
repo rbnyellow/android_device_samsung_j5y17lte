@@ -1,5 +1,9 @@
 on boot
 
+# Audio I2C node for TFA amp
+    chmod 0660 /dev/i2c-20
+    chown audio audio /dev/i2c-20
+
 # Permissions for Bluetooth.
     setprop ro.bt.bdaddr_path "/efs/bluetooth/bt_addr"
     chown bluetooth bluetooth ro.bt.bdaddr_path
