@@ -1,5 +1,5 @@
 # Disable tripple bufferring to reduce lags
-ro.sf.disable_triple_buffer=0
+ro.sf.disable_triple_buffer=1
 
 # DPI
 ro.sf.lcd_density=300
