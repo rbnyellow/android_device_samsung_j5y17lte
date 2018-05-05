@@ -1,18 +1,5 @@
 <manifest version="1.0" type="device">
     <!--
-        Fingerprint
-      -->
-    <hal format="hidl">
-        <name>android.hardware.biometrics.fingerprint</name>
-        <transport>hwbinder</transport>
-        <version>2.1</version>
-        <interface>
-            <name>IBiometricsFingerprint</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-
-    <!--
         Bluetooth
       -->
     <hal format="hidl">
@@ -82,6 +69,18 @@
              <instance>default</instance>
          </interface>
     </hal>
+
+    <!--
+        Fingerprint
+      -->
+    <hal format="hidl">
+        <name>android.hardware.biometrics.fingerprint</name>
+        <transport>hwbinder</transport>
+        <version>2.1</version>
+        <interface>
+            <name>IBiometricsFingerprint</name>
+            <instance>default</instance>
+        </interface>
     </hal>
 
     <!--
@@ -142,6 +141,19 @@
         <version>3.0</version>
         <interface>
             <name>IKeymasterDevice</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+
+    <!--
+        Lights
+      -->
+    <hal format="hidl">
+        <name>android.hardware.light</name>
+        <transport arch="32">passthrough</transport>
+        <version>2.0</version>
+        <interface>
+            <name>ILight</name>
             <instance>default</instance>
         </interface>
     </hal>
@@ -209,6 +221,10 @@
         <name>android.hardware.renderscript</name>
         <transport arch="32">passthrough</transport>
         <version>1.0</version>
+        <interface>
+            <name>IDevice</name>
+            <instance>default</instance>
+        </interface>
     </hal>
 
     <!--
