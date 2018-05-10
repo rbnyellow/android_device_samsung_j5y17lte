@@ -65,14 +65,15 @@ vendor/lib/libyasalgo.so
 
 # DRM
 vendor/lib/mediadrm/libdrmclearkeyplugin.so
-vendor/lib/mediadrm/libwvdrmengine.so
+# Widevine from Pixel 2
+vendor/lib/mediadrm/libwvdrmengine.so|2b5aa5d4d8665d4bd1180d5ccd8028cb
 
 # Fingerprint
-  lib/hw/fingerprint.default.so
-  lib/libbauthserver.so
-  lib/libbauthtzcommon.so
-  lib/libegis_fp_normal_sensor_test.so
-  lib/libsynaFpSensorTestNwd.so
+lib/hw/fingerprint.default.so
+lib/libbauthserver.so
+lib/libbauthtzcommon.so
+lib/libegis_fp_normal_sensor_test.so
+lib/libsynaFpSensorTestNwd.so
 
 # GPS
 bin/gpsd
@@ -122,13 +123,13 @@ vendor/lib/libMcClient.so:lib/libMcClient.so|6e20b880efa7e430beacaacd9b2721ed223
 vendor/lib/libMcRegistry.so:lib/libMcRegistry.so
 
  # Radio
-  lib/libsec-ril.so|09f007ba0fd0a66b98ccd4c4b8275c703a6a6804
-  lib/libsec-ril-dsds.so|baf6ac2e770b0456ad1ad3906c92a4deebd11040
-  lib/libsecril-client.so
-  lib/libaudio-ril.so
-  lib/libreference-ril.so
-  lib/librilutils.so
-  lib/libsecnativefeature.so
+lib/libsec-ril.so|09f007ba0fd0a66b98ccd4c4b8275c703a6a6804
+lib/libsec-ril-dsds.so|baf6ac2e770b0456ad1ad3906c92a4deebd11040
+lib/libsecril-client.so
+lib/libaudio-ril.so
+lib/libreference-ril.so
+lib/librilutils.so
+lib/libsecnativefeature.so
 
 # Sensors
 lib/hw/sensors.universal7870.so
