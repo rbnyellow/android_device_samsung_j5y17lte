@@ -38,4 +38,7 @@ persist.sys.usb.config=mtp,adb
 #Enable ADB Debugging By Default & Disable USB Debugging
 
 # Disable lockscreen rotation
-lockscreen.rot_override=false 
+lockscreen.rot_override=false
+
+# Audio
+audio_hal.disable_two_mic=false
