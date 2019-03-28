@@ -331,4 +331,14 @@
         </interface>
     </hal>
 
+    <hal format="hidl">
+        <name>vendor.samsung.hardware.radio.secoemhook</name>
+        <transport arch="32">passthrough</transport>
+        <version>1.0</version>
+        <interface>
+            <name>ISecOemHook</name>
+            <instance>slot1</instance>
+        </interface>
+    </hal>
+
 </manifest>
