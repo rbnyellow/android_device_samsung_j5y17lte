@@ -37,3 +37,9 @@ DEVICE_MANIFEST_FILE := device/samsung/j5y17lte/manifest.xml
 
 # Inherit from the proprietary version
 -include vendor/samsung/j5y17lte/BoardConfigVendor.mk
+
+# Inline kernel
+TARGET_KERNEL_SOURCE := kernel/samsung/exynos7870
+TARGET_KERNEL_CONFIG := maru-j5y17lte_defconfig
+TARGET_KERNEL_ARCH := arm64
+TARGET_KERNEL_HEADER_ARCH := arm64
