@@ -4,7 +4,7 @@ export ALLOW_MISSING_DEPENDENCIES=true
 ############# /e/ section ###############
 
 export EOS_DEVICE=j5y17lte
-export EOS_BRANCH_NAME="v1-pie"
+export EOS_BRANCH_NAME="v1-q"
 export EOS_RELEASE_TYPE="UNOFFICIAL"
 #export EOS_CUSTOM_PACKAGES="MuPDF GmsCore GsfProxy FakeStore com.google.android.maps.jar Mail BlissLauncher BlissIconPack MozillaNlpBackend OpenWeatherMapWeatherProvider AccountManager MagicEarth OpenCamera eDrive Weather Notes Tasks NominatimNlpBackend DroidGuard OpenKeychain Message Browser BrowserWebView LibreOfficeViewer noEOSappstore"
 export EOS_OTA_CLEARTEXT=true
