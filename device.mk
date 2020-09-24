@@ -45,9 +45,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/bluetooth/bt_vendor.conf:vendor/etc/bluetooth/bt_vendor.conf
 
-# Fingerprint
+# Fingerprint (must be 32bit as the service blob is 32bit)
 PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.1-service.samsung
+    android.hardware.biometrics.fingerprint@2.1:32
 
 # NFC
 PRODUCT_PACKAGES += \
