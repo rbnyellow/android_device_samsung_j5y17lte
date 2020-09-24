@@ -89,6 +89,7 @@ void vendor_load_properties()
     /* SM-J530F */
         property_override_quad("ro.product.model", "ro.product.odm.model", "ro.product.system.model", "ro.product.vendor.model", "SM-J530F");
         property_override_quad("ro.product.name", "ro.product.odm.name", "ro.product.system.name", "ro.product.vendor.name", "j5y17ltexx");
+        property_override_quad("ro.product.device", "ro.product.odm.device", "ro.product.system.device", "ro.product.vendor.device", "j5y17ltexx");
 
         init_dsds();
 
@@ -96,6 +97,7 @@ void vendor_load_properties()
     /* SM-J530G */
         property_override_quad("ro.product.model", "ro.product.odm.model", "ro.product.system.model", "ro.product.vendor.model", "SM-J530G");
         property_override_quad("ro.product.name", "ro.product.odm.name", "ro.product.system.name", "ro.product.vendor.name", "j5y17lte");
+        property_override_quad("ro.product.device", "ro.product.odm.device", "ro.product.system.device", "ro.product.vendor.device", "j5y17lte");
 
         init_dsds();
 
@@ -103,6 +105,7 @@ void vendor_load_properties()
     /* SM-J530GM */
         property_override_quad("ro.product.model", "ro.product.odm.model", "ro.product.system.model", "ro.product.vendor.model", "SM-J530GM");
         property_override_quad("ro.product.name", "ro.product.odm.name", "ro.product.system.name", "ro.product.vendor.name", "j5y17ltextc");
+        property_override_quad("ro.product.device", "ro.product.odm.device", "ro.product.system.device", "ro.product.vendor.device", "j5y17ltextc");
 
         init_dsds();
 
@@ -110,6 +113,7 @@ void vendor_load_properties()
     /* SM-J530FM */
         property_override_quad("ro.product.model", "ro.product.odm.model", "ro.product.system.model", "ro.product.vendor.model", "SM-J530FM");
         property_override_quad("ro.product.name", "ro.product.odm.name", "ro.product.system.name", "ro.product.vendor.name", "j5y17lte");
+        property_override_quad("ro.product.device", "ro.product.odm.device", "ro.product.system.device", "ro.product.vendor.device", "j5y17lte");
 
         init_dsds();
     }
