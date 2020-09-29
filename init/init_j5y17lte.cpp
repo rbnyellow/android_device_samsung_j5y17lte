@@ -118,10 +118,9 @@ void vendor_load_properties()
         init_dsds();
     }
 
-
     /* Common properties*/
-    property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", "google/coral/coral:10/QQ3A.200705.002/6506677:user/release-keys");
-    property_override("ro.build.description", "samsung/j5y17ltexx/j5y17lte:9/PPR1.180610.011/J530FXXU6CSK9:user/release-keys");
+    property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", "samsung/j5y17ltexx/j5y17lte:9/PPR1.180610.011/J530FXXS7CTF1:user/test-keys");
+    property_override("ro.build.description", "samsung/j5y17ltexx/j5y17lte:9/PPR1.180610.011/J530FXXS7CTF1:user/test-keys");
 
     std::string device = GetProperty("ro.product.device", "");
     LOG(ERROR) << "Found bootloader id %s setting build properties for %s device\n" << bootloader.c_str() << device.c_str();
